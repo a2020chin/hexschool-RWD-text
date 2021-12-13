@@ -1,0 +1,250 @@
+.secret{
+    position: relative;
+}
+.secret-title{
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.secret-title h3::after,
+.secret-title h3::before{
+    content: '';
+    width: 15%;
+    height: 1px;
+    background-color: #3D1101;
+    position: absolute;
+}
+.secret-title h3::before{
+    left: 210px;
+    top: 90px;
+}
+.secret-title h3::after{
+    right: 210px;
+}
+
+.visual-area{
+    display: flex;
+    justify-content: space-between;
+}
+.visual-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30.333%;
+}
+.visual-item img{
+    width: 100%;
+    height: 100%;
+    transition: transform 1.5s ease;
+}
+.visual-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.visual-item img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.visual-item h4{
+    margin-top: 20px;
+    margin-bottom: 11px;
+    font-size: 18px;
+}
+.visual-item p{
+    line-height: 1.5;
+}
+
+@media (max-width: 630px) {
+    .secret-title h3::after,
+    .secret-title h3::before{
+        display: none;
+    }
+    .visual-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .visual-item{
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+}
+/* secret end */
+
+.chef{
+    background: #3D1101;
+}
+.chef .container{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.chef img{
+    width: 50%;
+    object-fit: cover;
+}
+.chef-text{
+    max-width: 40%;
+    margin: 80px 0 80px 25px;
+    color: #efe9e7;
+}
+.chef-text h2{
+    font-size: 20px;
+    line-height: 32px;
+}
+.chef-text span{
+    display: block;
+    margin-bottom: 16px;
+}
+.chef-text p{
+    line-height: 1.5;
+    letter-spacing: .8px;
+}
+@media (max-width: 630px){
+    .chef .container{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .chef img{
+        margin: 0;
+        width: 100%;
+        height: 460px;
+    }
+    .chef-text{
+        max-width: 80%;
+        margin-left: 0;
+    }
+}
+
+/* chef end */
+
+.avatar h2{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.avatar ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.avatar ul li{
+    display: flex;
+    align-items: start;
+    width: 31%;
+}
+.avatar img{
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.avatar ul h3{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.avatar ul p{
+    line-height: 24px;
+}
+.avatar ul span{
+    display: block;
+    text-align: end;
+    margin-top: 16px;
+    margin-bottom: 50px;
+}
+@media (max-width: 630px) {
+    .avatar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar ul li{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+/* avatar end */
+.location{
+    background: #FAFAFA;
+}
+.location h2{
+    text-align: center;
+    font-size: 24px;
+    /* padding-top: 50px; */
+    margin-bottom: 38px;
+    line-height: 1.5;
+}
+.locationContent{
+    display: flex;
+    justify-content: space-between;
+}
+.locationContent img{
+    width: 50%;
+    background-size: cover;
+    
+}
+.locationContent form{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 45%;
+}
+.locationContent label{
+    margin-bottom: 10px;
+}
+.locationContent input{
+    margin-bottom: 20px;
+    padding: 8px;
+}
+.locationContent .button{
+    text-align: end;
+}
+.locationContent .button button{
+    border-radius: 3px;
+    padding: 6px 20px;
+    border-style: none;
+    color: white;
+    position: relative;
+}
+.locationContent .button button:hover{
+    cursor: pointer;
+}
+.locationContent .button button:hover::after{
+    width: 100%;
+    border-bottom: 3px solid #000;
+    border-radius: 3px;
+}
+.locationContent .button button::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+.locationContent .button .cancel{
+    background: rgba(0, 0, 0, 0.35);
+    margin-right: 10px;
+}
+.locationContent .button .submit{
+    background: #F56C23;
+}
+@media (max-width: 630px) {
+    .locationContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .locationContent img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .locationContent form{
+        width: 90%;
+    }
+}
+/* location end */
+

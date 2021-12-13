@@ -1,0 +1,75 @@
+.registr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid #FF5E45;
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgb(197, 197, 197);
+}
+.registr h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.registr .registrText{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.registrText .terms{
+    line-height: 1.4;
+    width: 45%;
+}
+.registrText .registrForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 1px;
+    margin-bottom: 30px;
+}
+ .registrForm .email,
+ .registrForm .password,
+ .registrForm .checkPassword{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-right: 1px;
+    margin-bottom: 30px;
+ }
+.registrText .registrForm input{
+    padding: 12px 40px; 
+}
+.registrText .registrForm i{
+    position: absolute;
+    top: 29px;
+    left: 15px;
+}
+.registrForm .checkPassword i{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+.registrForm .checkPassword a{
+    font-size: 18px;
+    color: #FF5E45;
+    margin-top: 5px;
+}
+.registrForm .button{
+    display: flex;
+    justify-content: end;
+}
+.registrForm .button a{
+    width: 33%;
+    background: #F56C23;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.registrForm .button a:hover{
+    background: #5f2607;
+    transition: 0.5s;
+}
